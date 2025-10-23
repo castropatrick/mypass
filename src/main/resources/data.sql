@@ -1,0 +1,10 @@
+INSERT INTO mission (title, description) VALUES ('Operation Nightfall', 'Infiltrate the enemy base under cover of darkness and retrieve classified documents from the vault');
+INSERT INTO mission (title, description) VALUES ('Silent Thunder', 'Eliminate the target without raising any alarms in the high-security facility');
+INSERT INTO mission (title, description) VALUES ('Digital Ghost', 'Hack into the mainframe and extract sensitive data without leaving any trace');
+INSERT INTO mission (title, description) VALUES ('Shadow Protocol', 'Surveil the suspect for 72 hours and document all their activities and contacts');
+INSERT INTO mission (title, description) VALUES ('Phoenix Rising', 'Rescue the captured agent from the underground prison before interrogation begins');
+INSERT INTO mission (title, description) VALUES ('Black Diamond', 'Intercept the weapons shipment at the border and prevent it from reaching the buyers');
+INSERT INTO mission (title, description) VALUES ('Crimson Echo', 'Plant listening devices in the embassy during the diplomatic reception');
+INSERT INTO mission (title, description) VALUES ('Arctic Wolf', 'Extract the defector from the safe house in the northern territories');
+INSERT INTO mission (title, description) VALUES ('Viper Strike', 'Neutralize the terrorist cell before they execute their planned attack');
+INSERT INTO mission (title, description) VALUES ('Golden Eagle', 'Protect the witness during their testimony at the international tribunal');
