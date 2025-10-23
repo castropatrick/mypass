@@ -1,25 +1,24 @@
 package br.com.fiap.mypass.controller;
 
-import br.com.fiap.mypass.model.PasswordEntry;
-import br.com.fiap.mypass.repository.PasswordRepository;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.fiap.mypass.model.PasswordEntry;
+import br.com.fiap.mypass.service.PasswordService;
+
 @RestController
-@RequestMapping("/passwords")
 public class PasswordController {
 
-    private final PasswordRepository repository;
+    private final PasswordService passwordService;
 
-    public PasswordController(PasswordRepository repository) {
-        this.repository = repository;
+    PasswordController(PasswordService passwordService) {
+        this.passwordService = passwordService;
     }
 
-    @GetMapping
-    public List<PasswordEntry> findAll() {
-        return repository.findAll();
+    @GetMapping("/passwords")
+    public List<PasswordEntry> getAllPasswords() {
+        return passwordService.getAllPasswords();
     }
-
-
 }
